@@ -1,0 +1,38 @@
+/*Here we style our html content*/
+:root{
+    --green:rgb(46, 85, 8);
+    --white:#fff;
+    --blue:rgb(0, 238, 255); 
+}
+*{
+    background-color: rgb(225, 240, 239);
+}
+.main-header{
+    text-align: center;
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--green);
+}
+.main-header h2{
+    font-size:large;
+}
+.main-header li {
+    list-style: none;
+    display: inline-flex;
+    font-style: normal;
+}
+
+section{
+    display:flex;
+}
+.about-me img{
+display: inline;
+width: 500px;
+height: 500px;
+}
+
+.about-me p {
+display: flex;
+text-align:left;
+font-size: large;
+}
