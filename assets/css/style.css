@@ -1,8 +1,7 @@
 /*Here we style our html content*/
 :root{/**/
     --green:rgb(54, 105, 2);
-    --white:#fff;
-    --blue:rgb(0, 238, 255); 
+    --background:antiquewhite;
 }
 
 html{/**/
@@ -44,7 +43,7 @@ nav{/**/
 .main-header a,.contact-info a {/**/
     font-family:'Courier New', Courier, monospace;
     border: 2px solid var(--green);
-    background-color: antiquewhite;
+    background-color: var(--background);
     text-decoration: none;
     font-weight: 400;
     color:var(--green);
@@ -82,7 +81,7 @@ font-size:  25px;
 border-style: double;
 border-radius: 15px;
 padding: 10px;
-background-color: antiquewhite;
+background-color: var(--background);
 }
 
 
@@ -123,7 +122,20 @@ background-color: antiquewhite;
     border-style: double;
     border-radius: 15px;
     padding: 10px;
-    background-color: antiquewhite;
+    background-color: var(--background);
+}
+.work pre{
+    position: relative;
+    right: -100px;
+    top: 450px;
+    background-color: var(--blue);
+    border: var(--green);
+    border-style: solid;
+    height: 20px;
+    width: 100px;
+    text-align: center;
+    padding-top: 3px;
+
 }
 
 .resume{
