@@ -33,7 +33,7 @@ html{/*sets a site wide background color*/
     .main-header{
         background-color: var(--background);
     }
-
+}
 .main-header li {/*Organizes the list items font, sizing and placements.*/
     list-style: none;
     display:inline-flex;
