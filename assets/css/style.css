@@ -1,50 +1,96 @@
 /*Here we style our html content*/
 :root{
-    --green:rgb(46, 85, 8);
+    --green:rgb(54, 105, 2);
     --white:#fff;
     --blue:rgb(0, 238, 255); 
 }
 *{
-    background-color: rgb(225, 240, 239);
+    /*background-color: rgb(225, 240, 239);*/
     box-sizing: border-box;
+}
+html{
+    background-color: rgb(225,240,239);
 }
 .main-header{
     display:flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
     font-family: 'Courier New', Courier, monospace;
     color: var(--green);
-    padding: 60px;
+    padding: 55px;
+    margin: 5px;
+    background-color: rgb(100, 198, 237);
 }
 .main-header h1{
-    font-size: larger;
+    margin-left:none;
+    margin-right: none;
+    font-size: 45px;
+
+}
+.main-header h2 {
+    
+    display:flex;
 }
 
 .main-header li {
     list-style: none;
-    display: inline;
+    display:inline-flex;
     font-style: normal;
+    padding: 5px;
+   
+}
+nav{
+    display: flex;
+    font-size: 18px;
+    font-style: normal;
+    
+}
+a {
+    font-family:'Courier New', Courier, monospace;
+    border: 2px solid var(--green);
+    background-color: antiquewhite;
+    text-decoration: none;
+    font-weight: 400;
+    color:var(--green);
+    font-size: 30px;
+}
+a:hover{
+    background-color:lightpink;
 }
 
 section{
     display:flex;
 }
 .about-me header  {
-    border-width: 1px 2em 5px 0;
+   margin: 60px;
+   padding: 15px;
+   font-size: 30px;
+   border: solid var(--green);
+    border-style: none solid none none;
 }
 .about-me img{
 display: inline;
 width: 300px;
 height: 300px;
+border-radius: 15px;
 }
 
 .about-me p {
 display: flex;
 text-align:left;
-font-size: large;
+font-size:  25px;
+border-style: double;
+border-radius: 15px;
+padding: 10px;
+background-color: antiquewhite;
 }
 .work header {
     width: 200px;
+    margin: 30px;
+    padding: 10px;
     border-style: double;
     border-left:solid var(--green);
+    font-size: 25px;
     
 }
