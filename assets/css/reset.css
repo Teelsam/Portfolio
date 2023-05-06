@@ -1,0 +1,26 @@
+/*This file resets any preloaded content from the browser*/
+*{/*This  code resets all margins and padding on the site to zero.*/
+    margin:0;
+    padding:0;
+
+}
+html {
+    /*This code resets the size of the webpage.*/
+    height:100%;
+
+}
+
+h1,h2,h3,h4,h5,h6{
+    /*this code resets the font sizing of all heading tags content. */
+    font-size: 100%;
+}
+
+input,select,option,optgroup,textarea,button,pre,code {
+    /*this code resets all font sizing and font types to standard size and page font type*/
+    font-size: 100%;
+    font-family: inherit;
+}
+ol,ul{
+    /*this code removes the bullets from list items, both ordered and unordered lists.*/
+    list-style:none;
+}

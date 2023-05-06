@@ -26,6 +26,9 @@ html{/**/
     font-size: 45px;
 
 }
+.main-header h2{
+    font-size: 25px;
+}
 
 .main-header li {/**/
     list-style: none;
