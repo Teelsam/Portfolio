@@ -128,7 +128,7 @@ background-color: var(--background);
     position: relative;
     right: -100px;
     top: 450px;
-    background-color: var(--blue);
+    background-color: var(--background);
     border: var(--green);
     border-style: solid;
     height: 20px;
