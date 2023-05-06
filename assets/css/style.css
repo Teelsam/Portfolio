@@ -1,14 +1,14 @@
 /*Here we style our html content*/
-:root{/**/
+:root{/*sets variables for the colors used on the site.*/
     --green:rgb(54, 105, 2);
     --background:antiquewhite;
 }
 
-html{/**/
+html{/*sets a site wide background color*/
     background-color: rgb(225,240,239);
 }
 
-.main-header{/**/
+.main-header{/*oranizes the heading space and its color, spacing and border.*/
     display:flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -20,30 +20,30 @@ html{/**/
     background-color: rgb(100, 198, 237);
     border: solid var(--green);
 }
-.main-header h1{/**/
+.main-header h1{/*organizes the main headers biggest heading*/
     margin-left:none;
     margin-right: none;
     font-size: 45px;
 
 }
-.main-header h2{
+.main-header h2{/*Sets the font size for the second biggest heading.*/
     font-size: 25px;
 }
 
-.main-header li {/**/
+.main-header li {/*Organizes the list items font, sizing and placements.*/
     list-style: none;
     display:inline-flex;
     font-style: normal;
     padding: 5px;
    
 }
-nav{/**/
+nav{/*sets the nav sections placement and its contents fonts.*/
     display: flex;
     font-size: 18px;
     font-style: normal;
     
 }
-.main-header a,.contact-info a {/**/
+.main-header a,.contact-info a {/*Sets the look for linked items on the page.*/
     font-family:'Courier New', Courier, monospace;
     border: 2px solid var(--green);
     background-color: var(--background);
@@ -53,31 +53,30 @@ nav{/**/
     font-size: 30px;
    
 }
-a:hover{
-    /**/
+a:hover{/*Sets the color for hovering over linked items*/
     background-color:lightpink;
 }
 
-section.about-me,section.work,section.resume,section.contact-info{/**/
+section.about-me,section.work,section.resume,section.contact-info{/*sets the display and borders for the sites sections.*/
     display:flex;
     border: var(--green);
     border-style: solid none solid none ;
 }
-.about-me header  {/**/
+.about-me header  {/*sets the position and bordering for the heading about me*/
    margin: 50px;
    padding: 15px;
    font-size: 30px;
    border: solid var(--green);
     border-style: none solid none none;
 }
-.about-me img{/**/
+.about-me img{/*postions the image of me*/
 display: inline;
 width: 300px;
 height: 280px;
 border-radius: 15px;
 }
 
-.about-me p {/**/
+.about-me p {/*positions and sets the font and border of the paragraph in about me*/
 display: flex;
 text-align:left;
 font-size:  25px;
@@ -88,14 +87,14 @@ background-color: var(--background);
 }
 
 
-.about-me.work,.contact-info{
+.about-me.work,.contact-info{/*Sets the positioning for sections for about me wor and contact info*/
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 10px;
     text-align: center;
 }
-.work header {/**/
+.work header {/*sets the position and bordering for the heading my work*/
     display: inline-flex;
     margin: 9px;
     padding: 15px;
@@ -104,7 +103,7 @@ background-color: var(--background);
      border-style: none solid none none;
     
 }
-.work img,.resume img {
+.work img,.resume img { /*Sets the sizing bordering for the images in work and resume*/
     display: flex;
     width: 800px;
     height:500px;
@@ -113,11 +112,11 @@ background-color: var(--background);
 
 }
 
-.work img:hover,.resume img:hover{
+.work img:hover,.resume img:hover{ /*sets the hover color change and border change for both work and resume images.*/ 
     border: dotted red;
     border-width:10px;
 }
-.work p {
+.work p {/*Sets the positions, fonts and borders for the work paragraph*/
     display: flex; 
     flex:1 0 200px; 
     flex-wrap: wrap;
@@ -127,7 +126,7 @@ background-color: var(--background);
     padding: 10px;
     background-color: var(--background);
 }
-.work pre{
+.work pre{ /*Sets the position, sizes and borders for the work image caption.*/
     position: relative;
     right: -100px;
     top: 450px;
@@ -141,11 +140,11 @@ background-color: var(--background);
 
 }
 
-.resume{
+.resume{/*Sets a custom padding for resume to line up the left border*/
     padding: 10px;
     
 }
-.resume header{
+.resume header{/*sets the position and bordering for the heading resume*/
     display: inline-flex;
     margin: 17px;
     padding: 15px;
@@ -154,7 +153,7 @@ background-color: var(--background);
      border-style: none solid none none;
     
 }
-.contact-info header{
+.contact-info header{/*sets the position and bordering for the heading contact info*/
     display: inline-flex;
     margin: 1px;
     padding: 8px;
