@@ -3,11 +3,9 @@
     --green:rgb(54, 105, 2);
     --background:antiquewhite;
 }
-
 html{/*sets a site wide background color*/
     background-color: rgb(225,240,239);
 }
-
 .main-header{/*oranizes the heading space and its color, spacing and border.*/
     display:flex;
     flex-wrap: wrap;
@@ -24,7 +22,6 @@ html{/*sets a site wide background color*/
     margin-left:none;
     margin-right: none;
     font-size: 45px;
-
 }
 .main-header h2{/*Sets the font size for the second biggest heading.*/
     font-size: 25px;
@@ -39,13 +36,11 @@ html{/*sets a site wide background color*/
     display:inline-flex;
     font-style: normal;
     padding: 5px;
-   
 }
 nav{/*sets the nav sections placement and its contents fonts.*/
     display: flex;
     font-size: 18px;
     font-style: normal;
-    
 }
 .main-header a,.contact-info a {/*Sets the look for linked items on the page.*/
     font-family:'Courier New', Courier, monospace;
@@ -55,12 +50,10 @@ nav{/*sets the nav sections placement and its contents fonts.*/
     font-weight: 400;
     color:var(--green);
     font-size: 30px;
-   
 }
 a:hover{/*Sets the color for hovering over linked items*/
     background-color:lightpink;
 }
-
 section.about-me,section.work,section.resume,section.contact-info{/*sets the display and borders for the sites sections.*/
     display:flex;
     border: var(--green);
@@ -74,23 +67,20 @@ section.about-me,section.work,section.resume,section.contact-info{/*sets the dis
     border-style: none solid none none;
 }
 .about-me img{/*postions the image of me*/
-display: inline;
-width: 300px;
-height: 280px;
-border-radius: 15px;
+    display: inline;
+    width: 300px;
+    height: 280px;
+    border-radius: 15px;
 }
-
 .about-me p {/*positions and sets the font and border of the paragraph in about me*/
-display: flex;
-text-align:left;
-font-size:  25px;
-border-style: double;
-border-radius: 15px;
-padding: 10px;
-background-color: var(--background);
+    display: flex;
+    text-align:left;
+    font-size:  25px;
+    border-style: double;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: var(--background);
 }
-
-
 .about-me.work,.contact-info{/*Sets the positioning for sections for about me wor and contact info*/
     display: inline-flex;
     flex-wrap: wrap;
@@ -105,7 +95,6 @@ background-color: var(--background);
     font-size: 30px;
     border: solid var(--green);
      border-style: none solid none none;
-    
 }
 .work img,.resume img { /*Sets the sizing bordering for the images in work and resume*/
     display: flex;
@@ -113,9 +102,7 @@ background-color: var(--background);
     height:500px;
     border: solid var(--green);
     border-width: 10px;
-
 }
-
 .work img:hover,.resume img:hover{ /*sets the hover color change and border change for both work and resume images.*/ 
     border: dotted red;
     border-width:10px;
@@ -141,12 +128,9 @@ background-color: var(--background);
     width: 100px;
     text-align: center;
     padding-top: 3px;
-
 }
-
 .resume{/*Sets a custom padding for resume to line up the left border*/
-    padding: 10px;
-    
+    padding: 10px;  
 }
 .resume header{/*sets the position and bordering for the heading resume*/
     display: inline-flex;
@@ -165,5 +149,8 @@ background-color: var(--background);
     border: solid var(--green);
      border-style: none solid none none;
 }
-
-
+footer{
+    text-align: center;
+    color:antiquewhite;
+    background-color: var(--green);
+}
