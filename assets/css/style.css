@@ -6,33 +6,45 @@
 }
 *{
     background-color: rgb(225, 240, 239);
+    box-sizing: border-box;
 }
 .main-header{
-    text-align: center;
-    font-size: larger;
+    display:flex;
+    justify-content: space-between;
     font-family: 'Courier New', Courier, monospace;
     color: var(--green);
+    padding: 60px;
 }
-.main-header h2{
-    font-size:large;
+.main-header h1{
+    font-size: larger;
 }
+
 .main-header li {
     list-style: none;
-    display: inline-flex;
+    display: inline;
     font-style: normal;
 }
 
 section{
     display:flex;
 }
+.about-me header  {
+    border-width: 1px 2em 5px 0;
+}
 .about-me img{
 display: inline;
-width: 500px;
-height: 500px;
+width: 300px;
+height: 300px;
 }
 
 .about-me p {
 display: flex;
 text-align:left;
 font-size: large;
+}
+.work header {
+    width: 200px;
+    border-style: double;
+    border-left:solid var(--green);
+    
 }

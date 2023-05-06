@@ -14,16 +14,18 @@
       <h2>Where employers find delight!</h2>
       <nav>
         <ul>
-          <li><a href="#">About me</a></li>
-          <li><a href="#">Work</a></li>
-          <li><a href="#">Resume</a></li>
-          <li><a href="#">Contant Info</a></li>
+          <!--Sets connections from nav to web content ids-->
+          <li><a href="#myMe">About me</a></li>
+          <li><a href="#myWork">Work</a></li>
+          <li><a href="#myResume">Resume</a></li>
+          <li><a href="#myContactInfo">Contant Info</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="about-me">
+      <section class="about-me" id="myMe">
         <!--Here I will load an image of myself to go along with my bio-->
+        <header>About Me</header>
         <img
           src="./assets/images/sam.jpg"
           alt="A handsome fella in a wizards costume."
@@ -34,6 +36,23 @@
           code. I graduated from a coding bootcamp run by Carleton University,
           which was a 24 week long course.
         </p>
+      </section>
+      <section class="Work" id="myWork">
+        <header>My Work</header>
+        <!--Here I place links and images of my work.-->
+        <a href="https://github.com/Teelsam">My github</a>
+        <img
+          src="./images/Project1.png"
+          alt="A screen shot of a green website."
+        />
+      </section>
+      <section class="Resume" id="myResume">
+        <header>Resume</header>
+        <!--Here I link my resume-->
+      </section>
+      <section class="Contact-Info" id="myContactInfo">
+        <header>Contact Info</header>
+        <!--Here I list my contact information.-->
       </section>
     </main>
   </body>
