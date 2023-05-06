@@ -29,6 +29,10 @@ html{/*sets a site wide background color*/
 .main-header h2{/*Sets the font size for the second biggest heading.*/
     font-size: 25px;
 }
+@media screen and (max-width: 768px){/*When viewed on a smartphone the main header will become the paragraph background color*/
+    .main-header{
+        background-color: var(--background);
+    }
 
 .main-header li {/*Organizes the list items font, sizing and placements.*/
     list-style: none;
