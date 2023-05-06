@@ -1,17 +1,14 @@
 /*Here we style our html content*/
-:root{
+:root{/**/
     --green:rgb(54, 105, 2);
     --white:#fff;
     --blue:rgb(0, 238, 255); 
 }
-*{
-    /*background-color: rgb(225, 240, 239);*/
-    box-sizing: border-box;
-}
-html{
+
+html{/**/
     background-color: rgb(225,240,239);
 }
-.main-header{
+.main-header{/**/
     display:flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -22,31 +19,31 @@ html{
     margin: 5px;
     background-color: rgb(100, 198, 237);
 }
-.main-header h1{
+.main-header h1{/**/
     margin-left:none;
     margin-right: none;
     font-size: 45px;
 
 }
-.main-header h2 {
+.main-header h2 {/**/
     
     display:flex;
 }
 
-.main-header li {
+.main-header li {/**/
     list-style: none;
     display:inline-flex;
     font-style: normal;
     padding: 5px;
    
 }
-nav{
+nav{/**/
     display: flex;
     font-size: 18px;
     font-style: normal;
     
 }
-a {
+.main-header a {/**/
     font-family:'Courier New', Courier, monospace;
     border: 2px solid var(--green);
     background-color: antiquewhite;
@@ -56,27 +53,28 @@ a {
     font-size: 30px;
 }
 a:hover{
+    /**/
     background-color:lightpink;
 }
 
-section{
+section.about-me{/**/
     display:flex;
 }
-.about-me header  {
+.about-me header  {/**/
    margin: 60px;
    padding: 15px;
    font-size: 30px;
    border: solid var(--green);
     border-style: none solid none none;
 }
-.about-me img{
+.about-me img{/**/
 display: inline;
 width: 300px;
 height: 300px;
 border-radius: 15px;
 }
 
-.about-me p {
+.about-me p {/**/
 display: flex;
 text-align:left;
 font-size:  25px;
@@ -85,12 +83,20 @@ border-radius: 15px;
 padding: 10px;
 background-color: antiquewhite;
 }
-.work header {
-    width: 200px;
-    margin: 30px;
-    padding: 10px;
-    border-style: double;
-    border-left:solid var(--green);
-    font-size: 25px;
+section.work{
+    display:flex;
+}
+.work header {/**/
+    margin: 60px;
+    padding: 15px;
+    font-size: 30px;
+    border: solid var(--green);
+     border-style: none solid none none;
     
+}
+.work img{
+    display:flex;
+    height: 500px;  
+    weight: 500px;
+
 }
