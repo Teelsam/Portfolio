@@ -8,6 +8,7 @@
 html{/**/
     background-color: rgb(225,240,239);
 }
+
 .main-header{/**/
     display:flex;
     flex-wrap: wrap;
@@ -18,6 +19,7 @@ html{/**/
     padding: 55px;
     margin: 5px;
     background-color: rgb(100, 198, 237);
+    border: solid var(--green);
 }
 .main-header h1{/**/
     margin-left:none;
@@ -51,6 +53,7 @@ nav{/**/
     font-weight: 400;
     color:var(--green);
     font-size: 30px;
+   
 }
 a:hover{
     /**/
@@ -59,6 +62,8 @@ a:hover{
 
 section.about-me{/**/
     display:flex;
+    border: var(--green);
+    border-style: solid none solid none ;
 }
 .about-me header  {/**/
    margin: 60px;
@@ -70,7 +75,7 @@ section.about-me{/**/
 .about-me img{/**/
 display: inline;
 width: 300px;
-height: 300px;
+height: 280px;
 border-radius: 15px;
 }
 
@@ -83,20 +88,32 @@ border-radius: 15px;
 padding: 10px;
 background-color: antiquewhite;
 }
-section.work{
-    display:flex;
+
+.work{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    text-align: center;
 }
 .work header {/**/
-    margin: 60px;
+    display: inline-flex;
+    margin: 9px;
     padding: 15px;
     font-size: 30px;
     border: solid var(--green);
      border-style: none solid none none;
     
 }
-.work img{
-    display:flex;
-    height: 500px;  
-    weight: 500px;
+.work img {
+    width: 800px;
+    height:500px;
+    border: solid var(--green);
+    border-width: 10px;
 
 }
+.work img:hover{
+    border: dotted red;
+    border-width:10px;
+}
+.resume
