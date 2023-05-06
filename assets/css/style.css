@@ -27,10 +27,6 @@ html{/**/
     font-size: 45px;
 
 }
-.main-header h2 {/**/
-    
-    display:flex;
-}
 
 .main-header li {/**/
     list-style: none;
@@ -45,7 +41,7 @@ nav{/**/
     font-style: normal;
     
 }
-.main-header a {/**/
+.main-header a,.contact-info a {/**/
     font-family:'Courier New', Courier, monospace;
     border: 2px solid var(--green);
     background-color: antiquewhite;
@@ -60,13 +56,13 @@ a:hover{
     background-color:lightpink;
 }
 
-section.about-me{/**/
+section.about-me,section.work,section.resume,section.contact-info{/**/
     display:flex;
     border: var(--green);
     border-style: solid none solid none ;
 }
 .about-me header  {/**/
-   margin: 60px;
+   margin: 50px;
    padding: 15px;
    font-size: 30px;
    border: solid var(--green);
@@ -89,7 +85,8 @@ padding: 10px;
 background-color: antiquewhite;
 }
 
-.work{
+
+.about-me.work,.contact-info{
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -105,7 +102,7 @@ background-color: antiquewhite;
      border-style: none solid none none;
     
 }
-.work img {
+.work img,.resume img {
     display: flex;
     width: 800px;
     height:500px;
@@ -113,7 +110,8 @@ background-color: antiquewhite;
     border-width: 10px;
 
 }
-.work img:hover{
+
+.work img:hover,.resume img:hover{
     border: dotted red;
     border-width:10px;
 }
@@ -129,5 +127,25 @@ background-color: antiquewhite;
 }
 
 .resume{
-
+    padding: 10px;
+    
 }
+.resume header{
+    display: inline-flex;
+    margin: 17px;
+    padding: 15px;
+    font-size: 30px;
+    border: solid var(--green);
+     border-style: none solid none none;
+    
+}
+.contact-info header{
+    display: inline-flex;
+    margin: 1px;
+    padding: 8px;
+    font-size: 25px;
+    border: solid var(--green);
+     border-style: none solid none none;
+}
+
+
