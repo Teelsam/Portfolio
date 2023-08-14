@@ -1,13 +1,18 @@
 /*Here we style our html content*/
-:root{/*sets variables for the colors used on the site.*/
-    --green:rgb(54, 105, 2);
-    --background:antiquewhite;
+:root {
+    /*sets variables for the colors used on the site.*/
+    --green: rgb(54, 105, 2);
+    --background: antiquewhite;
 }
-html{/*sets a site wide background color*/
-    background-color: rgb(225,240,239);
+
+html {
+    /*sets a site wide background color*/
+    background-color: rgb(225, 240, 239);
 }
-.main-header{/*oranizes the heading space and its color, spacing and border.*/
-    display:flex;
+
+.main-header {
+    /*oranizes the heading space and its color, spacing and border.*/
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
@@ -18,106 +23,191 @@ html{/*sets a site wide background color*/
     background-color: rgb(100, 198, 237);
     border: solid var(--green);
 }
-.main-header h1{/*organizes the main headers biggest heading*/
-    margin-left:none;
+
+.main-header h1 {
+    /*organizes the main headers biggest heading*/
+    margin-left: none;
     margin-right: none;
     font-size: 45px;
 }
-.main-header h2{/*Sets the font size for the second biggest heading.*/
+
+.main-header h2 {
+    /*Sets the font size for the second biggest heading.*/
     font-size: 25px;
 }
-@media screen and (max-width: 768px){/*When viewed on a smartphone the main header will become the paragraph background color*/
-    .main-header{
+
+@media screen and (max-width: 768px) {
+
+    /*When viewed on a smartphone the main header will become the paragraph background color*/
+    .main-header {
         background-color: var(--background);
     }
 }
-.main-header li {/*Organizes the list items font, sizing and placements.*/
+
+.main-header li {
+    /*Organizes the list items font, sizing and placements.*/
     list-style: none;
-    display:inline-flex;
+    display: inline-flex;
     font-style: normal;
     padding: 5px;
 }
-nav{/*sets the nav sections placement and its contents fonts.*/
+
+nav {
+    /*sets the nav sections placement and its contents fonts.*/
     display: flex;
     font-size: 18px;
     font-style: normal;
 }
-.main-header a,.contact-info a {/*Sets the look for linked items on the page.*/
-    font-family:'Courier New', Courier, monospace;
+
+.main-header a,
+.contact-info a {
+    /*Sets the look for linked items on the page.*/
+    font-family: 'Courier New', Courier, monospace;
     border: 2px solid var(--green);
     background-color: var(--background);
     text-decoration: none;
     font-weight: 400;
-    color:var(--green);
+    color: var(--green);
     font-size: 30px;
 }
-a:hover{/*Sets the color for hovering over linked items*/
-    background-color:lightpink;
+
+a:hover {
+    /*Sets the color for hovering over linked items*/
+    background-color: lightpink;
 }
-section.about-me,section.work,section.resume,section.contact-info{/*sets the display and borders for the sites sections.*/
-    display:flex;
+
+section.about-me,
+section.work,
+section.resume,
+section.contact-info {
+    /*sets the display and borders for the sites sections.*/
+    display: flex;
     border: var(--green);
-    border-style: solid none solid none ;
+    border-style: solid none solid none;
 }
-.about-me header  {/*sets the position and bordering for the heading about me*/
-   margin: 50px;
-   padding: 15px;
-   font-size: 30px;
-   border: solid var(--green);
+
+.about-me header {
+    /*sets the position and bordering for the heading about me*/
+    margin: 50px;
+    padding: 15px;
+    font-size: 30px;
+    border: solid var(--green);
     border-style: none solid none none;
 }
-.about-me img{/*postions the image of me*/
+
+.about-me img {
+    /*postions the image of me*/
+
+    width: 300px;
+    height: 280px;
+    border-radius: 15px;
+}
+
+#firstSam {
     display: inline;
     width: 300px;
     height: 280px;
     border-radius: 15px;
 }
-.about-me p {/*positions and sets the font and border of the paragraph in about me*/
+
+#secretSam {
+    width: 300px;
+    height: 280px;
+    border-radius: 15px;
+}
+
+
+
+
+.about-me p {
+    /*positions and sets the font and border of the paragraph in about me*/
     display: flex;
-    text-align:left;
-    font-size:  25px;
+    text-align: left;
+    font-size: 25px;
     border-style: double;
     border-radius: 15px;
     padding: 10px;
     background-color: var(--background);
 }
-.about-me.work,.contact-info{/*Sets the positioning for sections for about me wor and contact info*/
+
+.about-me.work,
+.contact-info {
+    /*Sets the positioning for sections for about me work and contact info*/
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 10px;
     text-align: center;
 }
-.work header {/*sets the position and bordering for the heading my work*/
+
+.work header {
+    /*sets the position and bordering for the heading my work*/
     display: inline-flex;
     margin: 9px;
     padding: 15px;
     font-size: 30px;
     border: solid var(--green);
-     border-style: none solid none none;
+    border-style: none solid none none;
 }
-.work img,.resume img { /*Sets the sizing bordering for the images in work and resume*/
+
+#workCaption {
+    height: 300px;
+    width: auto;
+}
+
+
+#firstProject,
+#secondProject {
+    width: auto;
+    height: auto;
+    display: flex;
+
+}
+
+#weekdayScheduler {
+    width: 400px;
+    height: 420px;
+}
+
+#Air-Pollution-Finder,
+#CheatSheetGen {
+    width: 500px;
+    height: 500px;
+}
+
+
+
+.work img,
+.resume img {
+    /*Sets the sizing bordering for the images in work and resume*/
     display: flex;
     width: 800px;
-    height:500px;
+    height: 500px;
     border: solid var(--green);
     border-width: 10px;
 }
-.work img:hover,.resume img:hover{ /*sets the hover color change and border change for both work and resume images.*/ 
+
+.work img:hover,
+.resume img:hover {
+    /*sets the hover color change and border change for both work and resume images.*/
     border: dotted red;
-    border-width:10px;
+    border-width: 10px;
 }
-.work p {/*Sets the positions, fonts and borders for the work paragraph*/
-    display: flex; 
-    flex:1 0 200px; 
+
+.work p {
+    /*Sets the positions, fonts and borders for the work paragraph*/
+    display: flex;
+    flex: 1 0 200px;
     flex-wrap: wrap;
-    font-size:  20px;
+    font-size: 20px;
     border-style: double;
     border-radius: 15px;
     padding: 10px;
     background-color: var(--background);
 }
-.work pre{ /*Sets the position, sizes and borders for the work image caption.*/
+
+.work pre {
+    /*Sets the position, sizes and borders for the work image caption.*/
     position: relative;
     right: -100px;
     top: 450px;
@@ -129,28 +219,35 @@ section.about-me,section.work,section.resume,section.contact-info{/*sets the dis
     text-align: center;
     padding-top: 3px;
 }
-.resume{/*Sets a custom padding for resume to line up the left border*/
-    padding: 10px;  
+
+.resume {
+    /*Sets a custom padding for resume to line up the left border*/
+    padding: 10px;
 }
-.resume header{/*sets the position and bordering for the heading resume*/
+
+.resume header {
+    /*sets the position and bordering for the heading resume*/
     display: inline-flex;
     margin: 17px;
     padding: 15px;
     font-size: 30px;
     border: solid var(--green);
-     border-style: none solid none none;
-    
+    border-style: none solid none none;
+
 }
-.contact-info header{/*sets the position and bordering for the heading contact info*/
+
+.contact-info header {
+    /*sets the position and bordering for the heading contact info*/
     display: inline-flex;
     margin: 1px;
     padding: 8px;
     font-size: 25px;
     border: solid var(--green);
-     border-style: none solid none none;
+    border-style: none solid none none;
 }
-footer{
+
+footer {
     text-align: center;
-    color:antiquewhite;
+    color: antiquewhite;
     background-color: var(--green);
 }
