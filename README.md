@@ -1,4 +1,4 @@
-# Week2Challenge
+# Portfolio
 
 [Link to the site](https://teelsam.github.io/Week2Challenge/)
 
