@@ -11,8 +11,8 @@
 }
 
 .mlr {
-    margin-left: 5rem;
-    margin-right: 5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 html {
@@ -31,7 +31,8 @@ html {
     padding: 55px;
     margin: 5px;
     background-color: rgb(119, 204, 237);
-    border: solid var(--green);
+    border-radius: 25px;
+
 }
 
 .main-header h1 {
@@ -90,31 +91,28 @@ a:hover {
 
 }
 
-section.about-me,
-section.work,
-section.resume,
-section.contact-info {
-    /*sets the display and borders for the sites sections.*/
-    display: flex;
-    border: var(--green);
-    border-style: solid none solid none;
-}
+
 
 .about-me header {
     /*sets the position and bordering for the heading about me*/
     margin: 50px;
     padding: 15px;
     font-size: 30px;
-    border: solid var(--green);
-    border-style: none solid none none;
+
 }
 
 .about-me img {
     /*postions the image of me*/
-
+    position: relative;
     width: 300px;
     height: 280px;
     border-radius: 15px;
+}
+
+.col-4 header {
+    background-color: orange;
+    width: fit-content;
+    border-radius: 25px;
 }
 
 #firstSam {
@@ -164,10 +162,15 @@ section.contact-info {
     padding: 15px;
     font-size: 30px;
     text-align: center;
-    border-style: none solid none none;
+
 }
 
-
+.work {
+    display: flex;
+    width: auto;
+    background-color: blanchedalmond;
+    border-radius: 25px;
+}
 
 
 .resume {
@@ -181,9 +184,12 @@ section.contact-info {
     margin: 17px;
     padding: 15px;
     font-size: 30px;
-    border: solid var(--green);
-    border-style: none solid none none;
 
+}
+
+.resumeBtn a {
+    text-decoration: none;
+    color: white;
 }
 
 .contact-info header {
@@ -192,9 +198,9 @@ section.contact-info {
     margin: 1px;
     padding: 8px;
     font-size: 25px;
-    border: solid var(--green);
-    border-style: none solid none none;
+
 }
+
 
 footer {
     text-align: center;

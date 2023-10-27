@@ -27,18 +27,29 @@
     </nav>
   </header>
   <main>
-    <section class="about-me" id="myMe">
-      <header>About Me</header>
-      <img id="firstSam" src="./assets/images/meBearded.jpg" alt="Picture of the sites author">
+    <section class=" container about-me" id="myMe">
+      <div class="row">
+        <div class="col-4">
+          <img id="firstSam" src="./assets/images/meBearded.jpg" alt="Picture of the sites author">
 
-      <!--A bio paragraph to go along with image.-->
-      <p>
-        Hello! My name is Sam Teel and thank you for taking the time to visit
-        my site! I am a full stack developer with an interest in all things
-        code. I graduated from a coding bootcamp run by Carleton University,
-        which was a 24 week long course.
-      </p>
-      <img id="secretSam" src="./assets/images/sam.jpg" alt="A handsome fella in a wizards costume." />
+
+        </div>
+        <div class="col-4">
+          <header>About Me</header>
+          <!--A bio paragraph to go along with image.-->
+          <p>
+            Hello! My name is Sam Teel and thank you for taking the time to visit
+            my site! I am a full stack developer with an interest in all things
+            code. I graduated from a coding bootcamp run by Carleton University,
+            which was a 24 week long course.
+          </p>
+
+        </div>
+        <div class="col-4">
+          <img id="secretSam" src="./assets/images/sam.jpg" alt="A handsome fella in a wizards costume." />
+
+        </div>
+      </div>
     </section>
 
     <section class="container work" id="myWork">
@@ -48,8 +59,8 @@
         <img src="./assets/images/WorkDayScheduler.png" class="card-img-top" alt="homepage">
         <div class="card-body">
           <h5 class="card-title">Work-Day-Scheduler</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
+          <p class="card-text">Plan for your day ahead with a simple yet informative website. Plan by the hour and see
+            the time pass with color changing panels.</p>
           <a href="https://teelsam.github.io/Work-Day-Scheduler/" class="btn btn-success">Live Site</a>
           <a href='https://github.com/Teelsam/Work-Day-Scheduler' class="btn btn-secondary">Github</a>
         </div>
@@ -58,39 +69,47 @@
         <img src="./assets/images/CozySpaces.png" class="card-img-top" alt="homepage">
         <div class="card-body">
           <h5 class="card-title">Cozy Spaces</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="https://teelsam.github.io/Work-Day-Scheduler/" class="btn btn-success">Live Site</a>
-          <a href='https://github.com/Teelsam/Work-Day-Scheduler' class="btn btn-secondary">Github</a>
+          <p class="card-text">Let us do the leg work on finding your dream vacation!</p>
+          <a href="https://protected-sierra-59308-f3833016945c.herokuapp.com/" class="btn btn-success">Live Site</a>
+          <a href='https://github.com/WDverse/cozy-spaces' class="btn btn-secondary">Github</a>
         </div>
       </div>
       <div class="card mtb mlr" style="width: 18rem;">
         <img src="./assets/images/EmployeeManager.png" class="card-img-top" alt="homepage">
         <div class="card-body">
           <h5 class="card-title">EmployeeTracker</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="https://teelsam.github.io/Work-Day-Scheduler/" class="btn btn-success">Live Site</a>
-          <a href='https://github.com/Teelsam/Work-Day-Scheduler' class="btn btn-secondary">Github</a>
+          <p class="card-text">A Backend project, allows the user to see, store, update and explore employees by
+            position,
+            salary and managers.</p>
+          <a href="https://drive.google.com/file/d/1yOZEVV7JWKrFpsND-6NPXPRUvCp3Zj9h/view" class="btn btn-success">Live
+            Demo</a>
+          <a href='https://github.com/Teelsam/EmployeeTrackerSQL' class="btn btn-secondary">Github</a>
         </div>
       </div>
 
-
-
     </section>
-
 
 
 
     <section class="resume" id="myResume">
       <header>Resume</header>
       <!--Here I link my resume-->
-      <a href="https://docs.google.com/document/d/1pXnMKShjJ9y67AvpdG3o370MSnj8L5kVw_YC3vtNdEA/edit?usp=sharing"><img
-          id="CheatSheetGen" src="./assets/images/SamsResumeWebDevScreenShot.png"
-          alt="A screen shot of my resume." /></a>
-      <section>
+      <div class="card mtb mlr" style="width: 18rem;">
+        <img src="./assets/images/ResumeWebDev.png" class="card-img-top" alt="resume ">
+        <div class="card-body">
+          <h5 class="card-title">Resume</h5>
+          <p class="card-text"></p>
+          <button class="btn btn-success resumeBtn"><a href="./assets/images/SamsResumeTechnical.pdf"
+              target="_blank">Download
+              Resume</a>
+          </button>
 
-      </section>
+        </div>
+
+
+        <section>
+
+        </section>
     </section>
     <section class="contact-info" id="myContactInfo">
       <header>Contact Info</header>
