@@ -28,7 +28,7 @@
   </header>
   <main>
     <section class=" container about-me" id="myMe">
-      <div class="row">
+      <div class="row aboutMeRow">
         <div class="col-4">
           <img id="firstSam" src="./assets/images/meBearded.jpg" alt="Picture of the sites author">
 
@@ -52,9 +52,14 @@
       </div>
     </section>
 
-    <section class="container work" id="myWork">
-      <header>My Work</header>
 
+    </div>
+    </div>
+    <section class="container work" id="myWork">
+
+      </div>
+      <div class="row">
+      </div>
       <div class="card mtb mlr" style="width: 18rem;">
         <img src="./assets/images/WorkDayScheduler.png" class="card-img-top" alt="homepage">
         <div class="card-body">
@@ -86,24 +91,33 @@
           <a href='https://github.com/Teelsam/EmployeeTrackerSQL' class="btn btn-secondary">Github</a>
         </div>
       </div>
+      <header class="workHeader">My Work</header>
 
     </section>
 
 
 
-    <section class="resume" id="myResume">
-      <header>Resume</header>
-      <!--Here I link my resume-->
-      <div class="card mtb mlr" style="width: 18rem;">
-        <img src="./assets/images/ResumeWebDev.png" class="card-img-top" alt="resume ">
-        <div class="card-body">
-          <h5 class="card-title">Resume</h5>
-          <p class="card-text"></p>
-          <button class="btn btn-success resumeBtn"><a href="./assets/images/SamsResumeTechnical.pdf"
-              target="_blank">Download
-              Resume</a>
-          </button>
+    <section class=" container resume" id="myResume">
+      <div class="row">
+        <div class="col-4 resumeHeader">
+          <header>Resume</header>
 
+
+        </div>
+        <div class="col-8">
+          <div class="card mtb mlr" style="width: 18rem;">
+            <img src="./assets/images/ResumeWebDev.png" class="card-img-top" alt="resume ">
+            <div class="card-body">
+              <h5 class="card-title">Resume</h5>
+              <p class="card-text"></p>
+              <!--Here I link my resume-->
+              <button class="btn btn-success resumeBtn"><a href="./assets/images/SamsResumeTechnical.pdf"
+                  target="_blank">Download
+                  Resume</a>
+              </button>
+            </div>
+
+          </div>
         </div>
 
 
@@ -111,10 +125,15 @@
 
         </section>
     </section>
-    <section class="contact-info" id="myContactInfo">
-      <header>Contact Info</header>
+    <section class=" container contact-info" id="myContactInfo">
+      <header class="col-4 ">Contact Info</header>
       <!--Here I list my contact information.-->
-      <a href="https://github.com/Teelsam">My github</a>
+      <div id="socials-container fadein">
+        <img src=".//assets/images/In-Blue-96.png" alt="My LinkedIn profile" class="  linkedIn fadein icon"
+          onclick="location.href='https://www.linkedin.com/in/samuel-teel-11044b198/'" />
+        <img src="./assets/images/github-mark.png" alt="My Github profile" class=" github fadein  icon"
+          onclick="location.href='https://github.com/Teelsam'" />
+      </div>
       <p>My Email: sjkteel@hotmail.com</p>
     </section>
   </main>

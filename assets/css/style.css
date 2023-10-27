@@ -101,6 +101,10 @@ a:hover {
 
 }
 
+.aboutMeRow {
+    left: 20px;
+}
+
 .about-me img {
     /*postions the image of me*/
     position: relative;
@@ -112,7 +116,7 @@ a:hover {
 .col-4 header {
     background-color: orange;
     width: fit-content;
-    border-radius: 25px;
+    border-radius: 15px;
 }
 
 #firstSam {
@@ -129,16 +133,19 @@ a:hover {
 }
 
 
-
+.about-me {
+    background-color: rgb(152, 184, 152);
+    border-radius: 25px;
+}
 
 .about-me p {
     /*positions and sets the font and border of the paragraph in about me*/
     display: flex;
     text-align: left;
     font-size: 25px;
-    border-style: double;
+    border-style: single;
+    padding: 25px;
     border-radius: 15px;
-    padding: 10px;
     background-color: var(--background);
 }
 
@@ -152,23 +159,24 @@ a:hover {
     text-align: center;
 }
 
-.work header {
+.workHeader {
     /*sets the position and bordering for the heading my work*/
     display: inline-flex;
-    margin-left: 5px;
-    margin-top: 50px;
-    margin-right: 50px;
-    margin-bottom: 50px;
-    padding: 15px;
     font-size: 30px;
+    align-content: center;
     text-align: center;
+    background-color: orange;
+    padding: 15px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 15px;
 
 }
 
 .work {
     display: flex;
     width: auto;
-    background-color: blanchedalmond;
+    background-color: rgb(244, 216, 174);
     border-radius: 25px;
 }
 
@@ -176,11 +184,13 @@ a:hover {
 .resume {
     /*Sets a custom padding for resume to line up the left border*/
     padding: 10px;
+    background-color: rgb(75, 124, 75);
+    border-radius: 25px;
 }
 
 .resume header {
     /*sets the position and bordering for the heading resume*/
-    display: inline-flex;
+    display: flex;
     margin: 17px;
     padding: 15px;
     font-size: 30px;
@@ -192,6 +202,11 @@ a:hover {
     color: white;
 }
 
+.contact-info {
+    background-color: rgb(248, 216, 168);
+    border-radius: 25px;
+}
+
 .contact-info header {
     /*sets the position and bordering for the heading contact info*/
     display: inline-flex;
@@ -201,9 +216,29 @@ a:hover {
 
 }
 
+.icon {
+    width: fit-content;
+    height: fit-content;
+}
+
+.github,
+.linkedIn {
+    height: 100px;
+    width: 100px;
+}
+
+.fadein {
+    opacity: 0.5;
+    transition: 1s ease;
+}
+
+.fadein:hover {
+    opacity: 1;
+    transition: 1s ease;
+}
 
 footer {
     text-align: center;
-    color: antiquewhite;
-    background-color: var(--green);
+    color: orange;
+    background-color: rgb(54, 121, 54);
 }
