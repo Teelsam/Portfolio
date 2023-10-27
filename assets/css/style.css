@@ -209,9 +209,9 @@ a:hover {
 
 .contact-info header {
     /*sets the position and bordering for the heading contact info*/
-    display: inline-flex;
-    margin: 1px;
-    padding: 8px;
+    display: flex;
+    /* margin: 1px; */
+    /* padding: 8px; */
     font-size: 25px;
 
 }
