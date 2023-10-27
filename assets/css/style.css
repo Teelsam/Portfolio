@@ -5,6 +5,16 @@
     --background: antiquewhite;
 }
 
+.mtb {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.mlr {
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
 html {
     /*sets a site wide background color*/
     background-color: rgb(225, 240, 239);
@@ -20,7 +30,7 @@ html {
     color: var(--green);
     padding: 55px;
     margin: 5px;
-    background-color: rgb(100, 198, 237);
+    background-color: rgb(119, 204, 237);
     border: solid var(--green);
 }
 
@@ -28,12 +38,14 @@ html {
     /*organizes the main headers biggest heading*/
     margin-left: none;
     margin-right: none;
-    font-size: 45px;
+    font-size: 50px;
+    font-weight: 900;
 }
 
 .main-header h2 {
     /*Sets the font size for the second biggest heading.*/
     font-size: 25px;
+    font-weight: bolder;
 }
 
 @media screen and (max-width: 768px) {
@@ -63,17 +75,19 @@ nav {
 .contact-info a {
     /*Sets the look for linked items on the page.*/
     font-family: 'Courier New', Courier, monospace;
-    border: 2px solid var(--green);
-    background-color: var(--background);
     text-decoration: none;
-    font-weight: 400;
+    font-weight: 700;
     color: var(--green);
     font-size: 30px;
 }
 
 a:hover {
     /*Sets the color for hovering over linked items*/
-    background-color: lightpink;
+    text-decoration: underline;
+    color: black;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181, 181, 181);
+
 }
 
 section.about-me,
@@ -143,82 +157,18 @@ section.contact-info {
 .work header {
     /*sets the position and bordering for the heading my work*/
     display: inline-flex;
-    margin: 9px;
+    margin-left: 5px;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
     padding: 15px;
     font-size: 30px;
-    border: solid var(--green);
+    text-align: center;
     border-style: none solid none none;
 }
 
-#workCaption {
-    height: 300px;
-    width: auto;
-}
 
 
-#firstProject,
-#secondProject {
-    width: auto;
-    height: auto;
-    display: flex;
-
-}
-
-#weekdayScheduler {
-    width: 400px;
-    height: 420px;
-}
-
-#Air-Pollution-Finder,
-#CheatSheetGen {
-    width: 500px;
-    height: 500px;
-}
-
-
-
-.work img,
-.resume img {
-    /*Sets the sizing bordering for the images in work and resume*/
-    display: flex;
-    width: 800px;
-    height: 500px;
-    border: solid var(--green);
-    border-width: 10px;
-}
-
-.work img:hover,
-.resume img:hover {
-    /*sets the hover color change and border change for both work and resume images.*/
-    border: dotted red;
-    border-width: 10px;
-}
-
-.work p {
-    /*Sets the positions, fonts and borders for the work paragraph*/
-    display: flex;
-    flex: 1 0 200px;
-    flex-wrap: wrap;
-    font-size: 20px;
-    border-style: double;
-    border-radius: 15px;
-    padding: 10px;
-    background-color: var(--background);
-}
-
-.work pre {
-    /*Sets the position, sizes and borders for the work image caption.*/
-    position: relative;
-    right: -100px;
-    top: 450px;
-    background-color: var(--background);
-    border: var(--green);
-    border-style: solid;
-    height: 20px;
-    width: 100px;
-    text-align: center;
-    padding-top: 3px;
-}
 
 .resume {
     /*Sets a custom padding for resume to line up the left border*/
