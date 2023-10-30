@@ -120,7 +120,7 @@ a:hover {
     border-radius: 15px;
 }
 
-.col-4 header {
+header {
     background-color: orange;
     width: fit-content;
     border-radius: 15px;
@@ -217,8 +217,8 @@ a:hover {
 .contact-info header {
     /*sets the position and bordering for the heading contact info*/
     display: flex;
-    /* margin: 1px; */
-    /* padding: 8px; */
+    margin: 1px;
+    padding: 8px;
     font-size: 25px;
 
 }
