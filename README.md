@@ -16,7 +16,7 @@ Also the ever important README file which you are now reading.
 
 ## Site ScreenShot
 
-![The Site](./assets/images/SiteScreenShot.png).
+![The Site](./assets/images/SiteScreenshot.png).
 
 ## Emoji source
 
