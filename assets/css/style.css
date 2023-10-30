@@ -5,6 +5,13 @@
     --background: antiquewhite;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Add this line to center the main content vertically and horizontally */
+}
+
 .mtb {
     margin-top: 5rem;
     margin-bottom: 5rem;
